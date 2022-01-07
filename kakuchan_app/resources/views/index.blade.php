@@ -11,29 +11,31 @@
 </head>
 
 <body>
-<!----- ヘッダー ----->
-<header>
-    <div class="top_container">
-        <div></div>
+    <div class="wrapper">
+    <!----- ヘッダー ----->
+    <header>
+        <div class="top_container">
+            <div></div>
+        </div>
+    </header>
+    <nav>ナビ</nav>
+    <!----- ヘッダー END ----->
+
+    <!----- メインコンテンツ ----->
+    <article>
+        <h1>タイトル</h1>
+        <div class="test_color" style="width: 100px; height: 100px;"></div>
+        <div class="test_color" style="width: 100px; height: 100px; background-color: blue;"></div>
+        <section>
+            <h2>タイトル</h2>
+            <p>コンテンツの内容</p>
+        </section>
+    </article>
+    <!----- メインコンテンツ END ----->
+
+    <!----- フッター ----->
+    <footer>フッター</footer>
+    <!----- フッター END ----->
     </div>
-</header>
-<nav>ナビ</nav>
-<!----- ヘッダー END ----->
-
-<!----- メインコンテンツ ----->
-<article>
-    <h1>タイトル</h1>
-    <div class="test_color" style="width: 100px; height: 100px;"></div>
-    <div class="test_color" style="width: 100px; height: 100px; background-color: blue;"></div>
-    <section>
-        <h2>タイトル</h2>
-        <p>コンテンツの内容</p>
-    </section>
-</article>
-<!----- メインコンテンツ END ----->
-
-<!----- フッター ----->
-<footer>フッター</footer>
-<!----- フッター END ----->
 </body>
 </html>
