@@ -18,6 +18,11 @@
     background-color: #6b7280;
 }
 
+.menu_container {
+    height: 46px;
+    background-color: white;
+}
+
 .test_color {
     background-color: red;
     border-radius: 30px;
