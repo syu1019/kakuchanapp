@@ -15,7 +15,7 @@
     <!----- ヘッダー ----->
     <header>
         <div class="top_container">
-            <div class="header"></div>
+            <div class="header_container"></div>
         </div>
     </header>
     <nav>ナビ</nav>
