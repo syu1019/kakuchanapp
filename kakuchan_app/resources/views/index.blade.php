@@ -5,6 +5,7 @@
     <title>サイトタイトル</title>
     <meta name="description" content="サイトキャプションを入力">
     <meta name="keywords" content="サイトキーワードを,で区切って入力">
+    <link rel="stylesheet" href="{{ asset('assets/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
 
 </head>
