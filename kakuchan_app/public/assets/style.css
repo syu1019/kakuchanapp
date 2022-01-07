@@ -4,6 +4,11 @@
     height: 830px;
 }
 
+.dev_border{
+    border: solid;
+    color: red;
+}
+
 .test_color{
     background-color: red;
     border-radius: 30px;
