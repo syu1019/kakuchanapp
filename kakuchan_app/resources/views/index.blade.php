@@ -11,7 +11,9 @@
 
 <body>
 <!----- ヘッダー ----->
-<header>ヘッダー</header>
+<header>
+    <div class="top_container"></div>
+</header>
 <nav>ナビ</nav>
 <!----- ヘッダー END ----->
 
