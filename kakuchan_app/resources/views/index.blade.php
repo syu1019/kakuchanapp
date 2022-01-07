@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <div class="wrapper">
+<div class="wrapper">
     <!----- ヘッダー ----->
     <header>
         <div class="top_container">
-            <div></div>
+            <div class="header"></div>
         </div>
     </header>
     <nav>ナビ</nav>
@@ -36,6 +36,6 @@
     <!----- フッター ----->
     <footer>フッター</footer>
     <!----- フッター END ----->
-    </div>
+</div>
 </body>
 </html>
