@@ -22,4 +22,8 @@ Route::get('/blog', function () {
     return view('blog');
 });
 
+Route::get('/createBlog', function () {
+    return view('createBlog');
+});
+
 Route::get('/admin', [AdminController::class, 'admin']);

@@ -15,7 +15,7 @@
     <header>
         <div class="top_container">
             <div class="header_container">
-                <a href="{{ url('/createBlog') }}">記事作成</a>
+                <button type="button">記事作成ページ</button>
             </div>
         </div>
     </header>
