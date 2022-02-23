@@ -14,7 +14,9 @@
     <!----- ヘッダー ----->
     <header>
         <div class="top_container">
-            <div class="header_container"></div>
+            <div class="header_container">
+                <button type="button">記事作成</button>
+            </div>
         </div>
     </header>
     <nav></nav>
