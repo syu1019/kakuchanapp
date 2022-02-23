@@ -15,7 +15,7 @@
     <header>
         <div class="top_container">
             <div class="header_container">
-                <button type="button">記事作成ページ</button>
+                <h1>記事作成ページ</h1>
             </div>
         </div>
     </header>
