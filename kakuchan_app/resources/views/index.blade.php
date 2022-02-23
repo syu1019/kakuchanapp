@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<div class="wrapper">
+<div class="wrapper" id="blog">
     <!----- ヘッダー ----->
     <header>
         <div class="top_container">

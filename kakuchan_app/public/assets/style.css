@@ -1,33 +1,38 @@
-.top_container {
+#blog .top_container {
     background-color: #2d3748;
     width: 100%;
     height: 830px;
 }
 
-.dev_border {
+#blog .dev_border {
     border: solid;
     color: red;
 }
 
-.wrapper {
+#blog .wrapper {
 
 }
 
-.header_container {
+#blog .header_container {
     height: 85px;
     background-color: #6b7280;
 }
 
-.menu_container {
+#blog .menu_container {
     height: 46px;
     background-color: white;
 }
 
-.test_color {
+#blog .test_color {
     background-color: red;
     border-radius: 30px;
 }
 
 #admin .header_container {
     background-color: cornflowerblue;
+}
+
+#admin .header_container {
+    height: 85px;
+    background-color: #6b7280;
 }
