@@ -119,6 +119,11 @@
       <excludeFolder url="file://$MODULE_DIR$/kakuchan_app/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/kakuchan_app/vendor/symfony/polyfill-intl-idn" />
       <excludeFolder url="file://$MODULE_DIR$/kakuchan_app/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/kakuchan_app/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/kakuchan_app/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/kakuchan_app/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/kakuchan_app/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/kakuchan_app/vendor/doctrine/deprecations" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
