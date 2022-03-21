@@ -26,9 +26,7 @@
     <article>
         <section>
             <label for="articleTextarea">記事</label>
-            <textarea id="articleTextarea" name="articleTextarea"
-                      rows="5" cols="33">
-</textarea>
+            <textarea id="articleTextarea" name="articleTextarea" rows="5" cols="33"></textarea>
         </section>
     </article>
     <!----- メインコンテンツ END ----->
