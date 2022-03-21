@@ -15,7 +15,7 @@
     <header>
         <div class="top_container">
             <div class="header_container">
-                <h1>記事作成ページ</h1>a
+                <h1>記事作成ページ</h1>
             </div>
         </div>
     </header>
@@ -25,6 +25,10 @@
     <!----- メインコンテンツ ----->
     <article>
         <section>
+            <label for="articleTextarea">記事</label>
+            <textarea id="articleTextarea" name="articleTextarea"
+                      rows="5" cols="33">
+</textarea>
         </section>
     </article>
     <!----- メインコンテンツ END ----->
