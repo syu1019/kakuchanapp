@@ -17,15 +17,15 @@
 <script>
     function articleDisplay($ele) {
         $.ajax({
-            type:'POST',
-            url:'/articleGet',
-            data:{
-                id:$ele.getAttribute("id")
+            type: 'POST',
+            url: '/articleGet',
+            data: {
+                id: $ele.getAttribute("id")
             },
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
             }
-        }).done((res)=>{
+        }).done((res) => {
             let articleTitle = document.getElementById('article_title');
             let articleText = document.getElementById('article_text');
             let article = JSON.parse(res);
@@ -42,11 +42,7 @@
         <h1 style="margin-bottom: 1rem">kakuchanのブログ</h1>
         <nav id="snav">
             <ul>
-                <li><a href="#">メニュー1</a></li>
-                <li><a href="#">メニュー2</a></li>
-                <li><a href="#">メニュー3</a></li>
-                <li><a href="#">メニュー4</a></li>
-                <li><a href="#">メニュー5</a></li>
+                <li><a href="#"></a></li>
             </ul>
         </nav>
     </header>
@@ -74,7 +70,6 @@
         </nav>
     </div>
     <footer>
-        <p class="center">&copy;2018 wanichan</p>
     </footer>
 </div>
 
