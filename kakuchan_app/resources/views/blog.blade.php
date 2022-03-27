@@ -4,6 +4,10 @@
 <head>
     <meta http-equiv="Content-Language" content="ja">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
     <title>サンプルトップページ（このタイトルは自由に変えてください）</title>
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
@@ -11,7 +15,7 @@
 
 <script>
     function articleDisplay($ele) {
-        let attr = $ele.getAttribute("id");
+        let id = $ele.getAttribute("id");
     }
 </script>
 
