@@ -52,8 +52,8 @@
     </header>
     <div id="page_content">
         <article>
-            <h2 id="article_title">記事タイトル</h2>
-            <div id="article_text">記事をここに表示する</div>
+            <h2 id="article_title">トップページ</h2>
+            <div id="article_text">kakuchanのブログへようこそ！</div>
         </article>
     </div>
     <div id="sidebar">
