@@ -39,8 +39,7 @@
 
 <div class="container">
     <header>
-        <h1>サイトタイトル</h1>
-        <p>ここにサイトの説明を入力</p>
+        <h1 style="margin-bottom: 1rem">kakuchanのブログ</h1>
         <nav id="snav">
             <ul>
                 <li><a href="#">メニュー1</a></li>
@@ -51,7 +50,6 @@
             </ul>
         </nav>
     </header>
-    <div class="ads">ここに広告コードを挿入します。</div>
     <div id="page_content">
         <article>
             <h2 id="article_title">記事タイトル</h2>
