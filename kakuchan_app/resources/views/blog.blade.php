@@ -28,8 +28,9 @@
         }).done((res)=>{
             let articleTitle = document.getElementById('article_title');
             let articleText = document.getElementById('article_text');
-            articleTitle.innerText = 'aaaa';
-            articleText.innerText = 'ssss';
+            let article = JSON.parse(res);
+            articleTitle.innerText = article.title;
+            articleText.innerText = article.text;
         });
     }
 </script>
