@@ -41,7 +41,8 @@
             <p>このページはトップページになります。このページのみダイナミックWebテンプレートを適用せず、このページ独自のコンテンツを作ってください。</p>
             <p>トップページ以外のページは、master.dwtを右クリックし、ショートカットメニューより［ダイナミックWebテンプレートから新規作成］を選択して記事作成してください。</p>
             <h2>参考リンク</h2>
-            <p>Expression Web 4についての各機能の解説サイトは、wanichan.comの姉妹コンテンツ『<a href="https://www.wanichan.com/web/expression/web4/"><strong>Expression
+            <p>Expression Web 4についての各機能の解説サイトは、wanichan.comの姉妹コンテンツ『<a
+                    href="https://www.wanichan.com/web/expression/web4/"><strong>Expression
                         Web 4を使ってみよう</strong></a>』を参照してください。</p>
         </aside>
     </div>
@@ -55,9 +56,16 @@
         <nav>
             <h3>アーカイブ</h3>
             <ul>
-                <li><a href="#">メニュー1</a></li>
-                <li><a href="#">メニュー2</a></li>
-                <li><a href="#">メニュー3</a></li>
+                @foreach($articles as $article)
+                    <li>
+                        <a href="#">
+                            {{$article->title}}<br>
+                            <div style="font-size: 12px">
+                                {{$article->created_at}}
+                            </div>
+                        </a>
+                    </li>
+                @endforeach
             </ul>
         </nav>
     </div>
