@@ -62,7 +62,7 @@
             <ul>
                 @foreach($articles as $article)
                     <li>
-                        <a id="{{$article->id}}" href="#" onclick="articleDisplay(this)">
+                        <a id="{{$article->id}}" href="#page_content" onclick="articleDisplay(this)">
                             {{$article->title}}<br>
                             <div style="font-size: 12px">
                                 {{$article->created_at}}
