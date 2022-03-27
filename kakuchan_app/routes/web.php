@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/blog', [BlogController::class, 'display']);
+Route::post('/articleGet', [BlogController::class, 'articleGet']);
 
 Route::get('/createBlog', function () {
     return view('createBlog');

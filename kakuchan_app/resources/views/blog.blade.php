@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="Content-Language" content="ja">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -15,7 +16,16 @@
 
 <script>
     function articleDisplay($ele) {
-        let id = $ele.getAttribute("id");
+        $.ajax({
+            type:'POST',
+            url:'/articleGet',
+            data:{
+                id:$ele.getAttribute("id")
+            },
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+            }
+        })
     }
 </script>
 

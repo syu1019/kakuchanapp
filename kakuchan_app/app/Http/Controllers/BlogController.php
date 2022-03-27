@@ -11,4 +11,8 @@ class BlogController extends Controller
         $articles = DB::table('article')->get();
         return view('blog', compact('articles'));
     }
+
+    public function articleGet(){
+        echo 'test';
+    }
 }
