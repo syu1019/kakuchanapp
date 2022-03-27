@@ -58,7 +58,7 @@
             <ul>
                 @foreach($articles as $article)
                     <li>
-                        <a href="#">
+                        <a id="{{$article->id}}" href="#">
                             {{$article->title}}<br>
                             <div style="font-size: 12px">
                                 {{$article->created_at}}
