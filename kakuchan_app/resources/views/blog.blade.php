@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <title>サイトタイトル</title>
-    <meta name="description" content="サイトキャプションを入力">
-    <meta name="keywords" content="サイトキーワードを,で区切って入力">
-    <link rel="stylesheet" href="{{ asset('assets/reset.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
 
+<head>
+    <meta http-equiv="Content-Language" content="ja">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <title>サンプルトップページ（このタイトルは自由に変えてください）</title>
+    <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
 </head>
 
 <body>
-<div class="wrapper" id="blog">
-    <!----- ヘッダー ----->
+
+<div class="container">
     <header>
-        <div class="top_container">
-            <div class="header_container"></div>
-            <div class="menu_container"></div>
-        </div>
+        <h1>サイトタイトル</h1>
+        <p>ここにサイトの説明を入力</p>
+        <nav id="snav">
+            <ul>
+                <li><a href="#">メニュー1</a></li>
+                <li><a href="#">メニュー2</a></li>
+                <li><a href="#">メニュー3</a></li>
+                <li><a href="#">メニュー4</a></li>
+                <li><a href="#">メニュー5</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>ナビ</nav>
-    <!----- ヘッダー END ----->
-
-    <!----- メインコンテンツ ----->
-    <article>
-        <h1>タイトル</h1>
-        <div class="test_color" style="width: 100px; height: 100px;"></div>
-        <div class="test_color" style="width: 100px; height: 100px; background-color: blue;"></div>
-        <section>
-            @foreach($articles as $article)
-            <h2>タイトル</h2>
-            {{$article->title}}debugaaaaaaaaaaaaa
-            <p>コンテンツの内容</p>
-            @endforeach
-        </section>
-    </article>
-    <!----- メインコンテンツ END ----->
-
-{{--[{--}}
-{{--    "id":1,--}}
-{{--    "title":"\u3066\u3059\u3068\u30bf\u30a4\u30c8\u30eb",--}}
-{{--    "text":"\u3066\u3059\u3068\u30c6\u30ad\u30b9\u30c8",--}}
-{{--    "created_at":"2022-03-25 12:02:09",--}}
-{{--    "updated_at":null--}}
-{{--}]--}}
-
-    <!----- フッター ----->
-    <footer>フッター</footer>
-    <!----- フッター END ----->
+    <div class="ads">ここに広告コードを挿入します。</div>
+    <div id="page_content">
+        <article>
+            <h2>このテンプレートの使い方</h2>
+            <p>このテンプレートはレスポンシブWebデザイン対応で、デスクトップでは右側コンテンツ、左側サイドバーの段組みレイアウトです。</p>
+            <dl>
+                <dt>サイドバー #sidebar</dt>
+                <dd>要素幅：スマホ・タブレット縦向きはデバイス幅、1024px以上は300px</dd>
+                <dt>コンテンツ #page_content</dt>
+                <dd>要素幅：スマホ・タブレット縦向きはデバイス幅、1024px以上は660px、1124px 以上は 730px</dd>
+            </dl>
+        </article>
+        <aside>
+            <p>モノトーンの色合いにしています。あとで自由にスタイルを変更してお使いいただけます。</p>
+            <p>このページはトップページになります。このページのみダイナミックWebテンプレートを適用せず、このページ独自のコンテンツを作ってください。</p>
+            <p>トップページ以外のページは、master.dwtを右クリックし、ショートカットメニューより［ダイナミックWebテンプレートから新規作成］を選択して記事作成してください。</p>
+            <h2>参考リンク</h2>
+            <p>Expression Web 4についての各機能の解説サイトは、wanichan.comの姉妹コンテンツ『<a href="https://www.wanichan.com/web/expression/web4/"><strong>Expression
+                        Web 4を使ってみよう</strong></a>』を参照してください。</p>
+        </aside>
+    </div>
+    <div id="sidebar">
+        <div class="inner">
+            <h3>プロフィール</h3>
+            <p>HTML5 &amp;
+                CSS3ベースのテンプレートです。あらかじめ［ツール］メニューの［ページ編集オプション］を選択し、［作成］タブを開いて、［ドキュメントの型宣言］を「HTML5」に、［CSSスキーマー］のバージョンを「CSS3
+                default」にしてください。</p>
+        </div>
+        <nav>
+            <h3>メニュー</h3>
+            <ul>
+                <li><a href="#">メニュー1</a></li>
+                <li><a href="#">メニュー2</a></li>
+                <li><a href="#">メニュー3</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer>
+        <p class="center">&copy;2018 wanichan</p>
+    </footer>
 </div>
+
 </body>
+
 </html>
