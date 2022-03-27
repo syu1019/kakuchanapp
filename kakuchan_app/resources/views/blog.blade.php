@@ -10,8 +10,8 @@
 </head>
 
 <script>
-    function articleDisplay(){
-        console.log('test');
+    function articleDisplay($ele) {
+        let attr = $ele.getAttribute("id");
     }
 </script>
 
@@ -65,7 +65,7 @@
             <ul>
                 @foreach($articles as $article)
                     <li>
-                        <a id="{{$article->id}}" href="#" onclick="articleDisplay()">
+                        <a id="{{$article->id}}" href="#" onclick="articleDisplay(this)">
                             {{$article->title}}<br>
                             <div style="font-size: 12px">
                                 {{$article->created_at}}
