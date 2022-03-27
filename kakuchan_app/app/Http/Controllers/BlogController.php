@@ -7,12 +7,14 @@ use Illuminate\Support\Facades\DB;
 
 class BlogController extends Controller
 {
-    public function display(){
+    public function display()
+    {
         $articles = DB::table('article')->get();
         return view('blog', compact('articles'));
     }
 
-    public function articleGet(Request $request){
+    public function articleGet(Request $request): void
+    {
         $row = DB::table('article')->where('id', '=', $request->id)->get();
         echo $row;
     }

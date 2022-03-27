@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\KakutaFive;
 use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
