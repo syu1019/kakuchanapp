@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class BlogController extends Controller
 {
     public function display(){
-        $article = DB::table('article')->get();
-        return view('blog', compact('article'));
+        $articles = DB::table('article')->get();
+        return view('blog', compact('articles'));
     }
 }
