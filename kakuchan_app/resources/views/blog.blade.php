@@ -25,7 +25,12 @@
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
             }
-        })
+        }).done((res)=>{
+            let articleTitle = document.getElementById('article_title');
+            let articleText = document.getElementById('article_text');
+            articleTitle.innerText = 'aaaa';
+            articleText.innerText = 'ssss';
+        });
     }
 </script>
 
@@ -48,8 +53,8 @@
     <div class="ads">ここに広告コードを挿入します。</div>
     <div id="page_content">
         <article>
-            <h2>記事タイトル</h2>
-            <div id="showArea">記事をここに表示する</div>
+            <h2 id="article_title">記事タイトル</h2>
+            <div id="article_text">記事をここに表示する</div>
         </article>
     </div>
     <div id="sidebar">
