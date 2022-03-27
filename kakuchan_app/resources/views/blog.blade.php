@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
     <title>サンプルトップページ（このタイトルは自由に変えてください）</title>
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
 </head>
+
+<script>
+    function articleDisplay(){
+        console.log('test');
+    }
+</script>
 
 <body>
 
@@ -58,7 +65,7 @@
             <ul>
                 @foreach($articles as $article)
                     <li>
-                        <a id="{{$article->id}}" href="#">
+                        <a id="{{$article->id}}" href="#" onclick="articleDisplay()">
                             {{$article->title}}<br>
                             <div style="font-size: 12px">
                                 {{$article->created_at}}
