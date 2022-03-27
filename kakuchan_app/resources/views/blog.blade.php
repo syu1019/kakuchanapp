@@ -48,24 +48,9 @@
     <div class="ads">ここに広告コードを挿入します。</div>
     <div id="page_content">
         <article>
-            <h2>このテンプレートの使い方</h2>
-            <p>このテンプレートはレスポンシブWebデザイン対応で、デスクトップでは右側コンテンツ、左側サイドバーの段組みレイアウトです。</p>
-            <dl>
-                <dt>サイドバー #sidebar</dt>
-                <dd>要素幅：スマホ・タブレット縦向きはデバイス幅、1024px以上は300px</dd>
-                <dt>コンテンツ #page_content</dt>
-                <dd>要素幅：スマホ・タブレット縦向きはデバイス幅、1024px以上は660px、1124px 以上は 730px</dd>
-            </dl>
+            <h2>記事タイトル</h2>
+            <div id="showArea">記事をここに表示する</div>
         </article>
-        <aside>
-            <p>モノトーンの色合いにしています。あとで自由にスタイルを変更してお使いいただけます。</p>
-            <p>このページはトップページになります。このページのみダイナミックWebテンプレートを適用せず、このページ独自のコンテンツを作ってください。</p>
-            <p>トップページ以外のページは、master.dwtを右クリックし、ショートカットメニューより［ダイナミックWebテンプレートから新規作成］を選択して記事作成してください。</p>
-            <h2>参考リンク</h2>
-            <p>Expression Web 4についての各機能の解説サイトは、wanichan.comの姉妹コンテンツ『<a
-                    href="https://www.wanichan.com/web/expression/web4/"><strong>Expression
-                        Web 4を使ってみよう</strong></a>』を参照してください。</p>
-        </aside>
     </div>
     <div id="sidebar">
         <div class="inner">
