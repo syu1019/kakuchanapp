@@ -28,11 +28,22 @@
         <div class="test_color" style="width: 100px; height: 100px;"></div>
         <div class="test_color" style="width: 100px; height: 100px; background-color: blue;"></div>
         <section>
+            @foreach($articles as $article)
             <h2>タイトル</h2>
+            {{$article->title}}debugaaaaaaaaaaaaa
             <p>コンテンツの内容</p>
+            @endforeach
         </section>
     </article>
     <!----- メインコンテンツ END ----->
+
+{{--[{--}}
+{{--    "id":1,--}}
+{{--    "title":"\u3066\u3059\u3068\u30bf\u30a4\u30c8\u30eb",--}}
+{{--    "text":"\u3066\u3059\u3068\u30c6\u30ad\u30b9\u30c8",--}}
+{{--    "created_at":"2022-03-25 12:02:09",--}}
+{{--    "updated_at":null--}}
+{{--}]--}}
 
     <!----- フッター ----->
     <footer>フッター</footer>
